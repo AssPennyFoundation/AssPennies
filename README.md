@@ -1,7 +1,6 @@
-FooCoin (FOO)
+AssPennies (ASS)
 ===========
 
-[![Build Status](https://travis-ci.org/RazorLove/foocoin.png?branch=master)](https://travis-ci.org/RazorLove/foocoin)
+NEED AN IMAGE HERE
 
-
-Scrypt Hashcash PoW Template
+Scrypt CryptoCurrency built from FooCoin: https://github.com/RazorLove/foocoin
