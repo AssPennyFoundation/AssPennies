@@ -828,13 +828,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 1 * COIN;
-
+    int64 nSubsidy = 25 * COIN; //25 AssPennies per block
     return nSubsidy + nFees;
 }
 
-static const int64 nTargetTimespan = 1 * 24 * 60 * 60; // AssPennies: 1 days
-static const int64 nTargetSpacing = 120; // AssPennies: 2 minute blocks
+static const int64 nTargetTimespan = 1 * 60 * 60 * 4; // Re-target AssPennies difficulty: 4 hours
+static const int64 nTargetSpacing = 720; // 12 minute blocks (5 blocks per hour, 120 blocks per day)
 static const int64 nInterval = nTargetTimespan / nTargetSpacing;
 
 // Thanks: Balthazar for suggesting the following fix
