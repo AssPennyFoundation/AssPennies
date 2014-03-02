@@ -34,9 +34,9 @@ QString BitcoinUnits::name(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("GEO");
-    case mBTC: return QString("mGEO");
-    case uBTC: return QString::fromUtf8("μGEO");
+    case BTC: return QString("ASS");
+    case mBTC: return QString("mASS");
+    case uBTC: return QString::fromUtf8("μASS");
     default: return QString("???");
     }
 }
@@ -45,13 +45,13 @@ QString BitcoinUnits::description(int unit)
 {
     switch(unit)
     {
-    case BTC: return QString("FooCoin");
-    case mBTC: return QString("milliFooCoin (1 / 1,000)");
-    case uBTC: return QString("microFooCoin (1 / 1,000,000)");
+    case BTC: return QString("AssPennies");
+    case mBTC: return QString("milliAssPennies (1 / 1,000)");
+    case uBTC: return QString("microAssPennies (1 / 1,000,000)");
     default: return QString("???");
     }
 }
-//a single unit (.00000001) of FooCoin is called a "wander."
+//a single unit (.00000001) of AssPennies is called a "dingle."
 qint64 BitcoinUnits::factor(int unit)
 {
     switch(unit)

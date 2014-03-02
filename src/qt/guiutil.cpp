@@ -78,7 +78,7 @@ void setupAmountWidget(QLineEdit *widget, QWidget *parent)
 
 bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 {
-    if(uri.scheme() != QString("foocoin"))
+    if(uri.scheme() != QString("asspennies"))
         return false;
 
     // check if the address is valid
@@ -128,13 +128,13 @@ bool parseBitcoinURI(const QUrl &uri, SendCoinsRecipient *out)
 
 bool parseBitcoinURI(QString uri, SendCoinsRecipient *out)
 {
-    // Convert FooCoin:// to FooCoin:
+    // Convert AssPennies:// to AssPennies:
     //
-    //    Cannot handle this later, because foocoin:// will cause Qt to see the part after // as host,
+    //    Cannot handle this later, because asspennies:// will cause Qt to see the part after // as host,
     //    which will lowercase it (and thus invalidate the address).
-    if(uri.startsWith("foocoin://"))
+    if(uri.startsWith("asspennies://"))
     {
-        uri.replace(0, 11, "foocoin:");
+        uri.replace(0, 11, "asspennies:");
     }
     QUrl uriInstance(uri);
     return parseBitcoinURI(uriInstance, out);
@@ -278,12 +278,12 @@ bool ToolTipToRichTextFilter::eventFilter(QObject *obj, QEvent *evt)
 #ifdef WIN32
 boost::filesystem::path static StartupShortcutPath()
 {
-    return GetSpecialFolderPath(CSIDL_STARTUP) / "FooCoin.lnk";
+    return GetSpecialFolderPath(CSIDL_STARTUP) / "AssPennies.lnk";
 }
 
 bool GetStartOnSystemStartup()
 {
-    // check for FooCoin.lnk
+    // check for AssPennies.lnk
     return boost::filesystem::exists(StartupShortcutPath());
 }
 
@@ -360,7 +360,7 @@ boost::filesystem::path static GetAutostartDir()
 
 boost::filesystem::path static GetAutostartFilePath()
 {
-    return GetAutostartDir() / "foocoin.desktop";
+    return GetAutostartDir() / "asspennies.desktop";
 }
 
 bool GetStartOnSystemStartup()
@@ -398,10 +398,10 @@ bool SetStartOnSystemStartup(bool fAutoStart)
         boost::filesystem::ofstream optionFile(GetAutostartFilePath(), std::ios_base::out|std::ios_base::trunc);
         if (!optionFile.good())
             return false;
-        // Write a foocoin.desktop file to the autostart directory:
+        // Write an asspennies.desktop file to the autostart directory:
         optionFile << "[Desktop Entry]\n";
         optionFile << "Type=Application\n";
-        optionFile << "Name=FooCoin\n";
+        optionFile << "Name=AssPennies\n";
         optionFile << "Exec=" << pszExePath << " -min\n";
         optionFile << "Terminal=false\n";
         optionFile << "Hidden=false\n";
@@ -422,10 +422,10 @@ bool SetStartOnSystemStartup(bool fAutoStart) { return false; }
 HelpMessageBox::HelpMessageBox(QWidget *parent) :
     QMessageBox(parent)
 {
-    header = tr("foocoin-qt") + " " + tr("version") + " " +
+    header = tr("asspennies-qt") + " " + tr("version") + " " +
         QString::fromStdString(FormatFullVersion()) + "\n\n" +
         tr("Usage:") + "\n" +
-        "  foocoin-qt [" + tr("command-line options") + "]                     " + "\n";
+        "  asspennies-qt [" + tr("command-line options") + "]                     " + "\n";
 
     coreOptions = QString::fromStdString(HelpMessage());
 
@@ -434,7 +434,7 @@ HelpMessageBox::HelpMessageBox(QWidget *parent) :
         "  -min                   " + tr("Start minimized") + "\n" +
         "  -splash                " + tr("Show splash screen on startup (default: 1)") + "\n";
 
-    setWindowTitle(tr("foocoin-qt"));
+    setWindowTitle(tr("asspennies-qt"));
     setTextFormat(Qt::PlainText);
     // setMinimumWidth is ignored for QMessageBox so put in nonbreaking spaces to make it wider.
     setText(header + QString(QChar(0x2003)).repeated(50));
