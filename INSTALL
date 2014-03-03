@@ -2,8 +2,8 @@ Building AssPennies
 
 See doc/readme-qt.rst for instructions on building asspennies-qt,
 the intended-for-end-users, nice-graphical-interface, reference
-implementation of FooCoin.
+implementation of AssPennies.
 
 See doc/build-*.txt for instructions on building asspennies,
 the intended-for-services, no-graphical-interface, reference
-implementation of FooCoin.
+implementation of AssPennies.
