@@ -7,11 +7,11 @@
     <x>0</x>
     <y>0</y>
     <width>740</width>
-    <height>450</height>
+    <height>491</height>
    </rect>
   </property>
   <property name="windowTitle">
-   <string>FooCoin - Debug window</string>
+   <string>AssPennies - Debug window</string>
   </property>
   <layout class="QVBoxLayout" name="verticalLayout_2">
    <item>
@@ -36,7 +36,7 @@
           </font>
          </property>
          <property name="text">
-          <string>Bitcoin Core</string>
+          <string>AssPennies Core</string>
          </property>
         </widget>
        </item>
@@ -322,7 +322,7 @@
        <item row="15" column="0">
         <widget class="QPushButton" name="openDebugLogfileButton">
          <property name="toolTip">
-          <string>Open the FooCoin debug logfile from the current data directory. This can take a few seconds for large logfiles.</string>
+          <string>Open the AssPennies debug logfile from the current data directory. This can take a few seconds for large logfiles.</string>
          </property>
          <property name="text">
           <string>&amp;Open</string>
@@ -352,9 +352,6 @@
          </property>
          <property name="text">
           <string>&amp;Show</string>
-         </property>
-         <property name="autoDefault">
-          <bool>false</bool>
          </property>
          <property name="autoDefault">
           <bool>false</bool>
