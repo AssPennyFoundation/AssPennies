@@ -4,17 +4,26 @@
 ![AssPennies](http://i.imgur.com/X4coDlS.png)
 
 ## What are AssPennies?
-AssPennies are a scrypt cryptocurrency built from FooCoin: https://github.com/RazorLove/foocoin
+Every time a penny passes through your hands, stick it up your ass... and then spend it. You don't just stick 'em up your ass, you spend them. It's a long-term stragegy.
+
+Seriously though, AssPennies are a scrypt cryptocurrency built from FooCoin: https://github.com/RazorLove/foocoin
 
 
 ## How to get AssPennies
-The best way to get AssPennies of your own is to mine them with the QT client, or with cgminer .
+Until an exchange gets its shit together and starts trading AssPennies, there are three ways to get them:
 
+* CPU mine them with the QT client
+* AMD/ATI cards can use cgminer 3.7.2: http://ck.kolivas.org/apps/cgminer/3.7
+* Nvidia cards can use cudaminer: https://github.com/cbuchner1/CudaMiner
+
+
+### Let's talk numbers
 * 12,012,000 total AssPennies will be mined (8 times the population of Nebraska)
-* Blocks are mined every 12 minutes.  
+* Blocks are mined every 12 minutes.
 * Block reward is 125 AssPennies. 
 * Difficulty is readjusted every 4 hours.
 * 3,000 AssPennies are mined every day.
+* You don't pull down 8 figures a year without having it _together_.
 
 ## Building AssPennies QT client
 
@@ -34,5 +43,13 @@ The best way to get AssPennies of your own is to mine them with the QT client, o
 
 
 ## Ports
-RPC - 21000  
-P2P - 21007
+RPC: 21000  
+P2P: 21007
+
+
+## You think you're better than me?
+AssPennies is released under the terms of the MIT license. See [COPYING](COPYING)
+for more information or see http://opensource.org/licenses/MIT.
+
+
+[![Ass Pennies on YouTube](http://i.imgur.com/8tIuBCL.jpg)](https://www.youtube.com/watch?v=DO1Q7F23DxM)
