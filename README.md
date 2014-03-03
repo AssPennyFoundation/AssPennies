@@ -1,5 +1,4 @@
 # AssPennies (ASS)
-===========
 
 ![AssPennies](http://i.imgur.com/X4coDlS.png)
 
@@ -25,7 +24,7 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 * Difficulty is readjusted every 4 hours
 * 3,000 AssPennies are mined every day
 
-## Building AssPennies QT client
+## Building the AssPennies QT client
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
 	sudo apt-get update
@@ -47,6 +46,12 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 RPC: 21000  
 P2P: 21007
 
+## Contributing to this project
+If you want to contribute to the project: 
+
+* Fork this repo
+* Commit changes to your forked repo
+* Submit a pull request when your feature or bug fix is ready
 
 ## You think you're better than me?
 You don't pull down 8 figures a year without having it _together_.  
