@@ -3,7 +3,7 @@
 ![AssPennies](http://i.imgur.com/X4coDlS.png)
 
 ## What are AssPennies?
-Every time a penny passes through your hands, stick it up your ass... and then spend it. You don't just stick 'em up your ass, you spend them. It's a long-term stragegy.
+Every time a penny passes through your hands, stick it up your ass... and then spend it. You don't just stick 'em up your ass, you spend them. It's a long-term strategy.
 
 Seriously though, AssPennies are a scrypt cryptocurrency built from FooCoin:  
 https://github.com/RazorLove/foocoin
@@ -12,13 +12,13 @@ https://github.com/RazorLove/foocoin
 ## How to get AssPennies
 Until an exchange gets its shit together and starts trading AssPennies, there are three ways to get them:
 
-* CPU mine them with the QT client or asspenniesd
-* ATI/AMD cards use cgminer 3.7.2: http://ck.kolivas.org/apps/cgminer/3.7
-* Nvidia cards use cudaminer: https://github.com/cbuchner1/CudaMiner
+* CPU mine with the QT client or asspenniesd
+* ATI/AMD mine with cgminer 3.7.2: http://ck.kolivas.org/apps/cgminer/3.7
+* Nvidia mine with cudaminer: https://github.com/cbuchner1/CudaMiner
 
 
 ### Let's talk numbers
-* 12,012,000 total AssPennies will be mined (8 times the population of Nebraska)
+* 12,012,000 total AssPennies will be created (8 times the population of Nebraska)
 * Blocks are mined every 12 minutes
 * Block reward is 125 AssPennies
 * Difficulty is readjusted every 4 hours
