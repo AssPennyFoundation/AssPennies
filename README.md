@@ -20,7 +20,7 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 ### Let's talk numbers
 * 12,012,000 total AssPennies will be created (8 times the population of Nebraska)
 * Blocks are mined every 12 minutes
-* Block reward is 125 AssPennies
+* Block reward is 25 AssPennies
 * Difficulty is readjusted every 4 hours
 * 3,000 AssPennies are mined every day
 
@@ -28,16 +28,16 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
 	sudo apt-get update
-	sudo apt-get install libdb4.8++-dev    
-	sudo apt-get install libminiupnpc-dev \
-		libboost-dev \
-		libboost-chrono-dev \
-		libboost-filesystem-dev \
-		libboost-thread-dev \
-		libboost-date-time-dev \
-		libboost-filesystem-dev \
-		libboost-system-dev \
-		libboost-program-options-dev 
+	sudo apt-get install libdb4.8++-dev
+	sudo apt-get install libminiupnpc8-dev \
+            libboost1.48-dev \
+            libboost-chrono1.48-dev \
+            libboost-date-time1.48-dev \
+            libboost-filesystem1.48-dev \
+            libboost-program-options1.48-dev \
+            libboost-regex1.48-dev \
+            libboost-system1.48-dev \
+            libboost-thread1.48-dev 
 
 	qmake	
 	make
