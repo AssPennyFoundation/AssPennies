@@ -16,13 +16,19 @@ WINDOWS BUILD NOTES
 
 Compilers Supported
 -------------------
-Release was compiled on a Windows XP VM using MinGW and EasyWinBuilder. Details here:
+Release was compiled on a Windows XP VM using MinGW and EasyWinBuilder. 
+Details here:
 https://bitcointalk.org/index.php?topic=252931.0
 https://github.com/phelixbtc/bitcoin/tree/0.8.5-EWB
 
-Phelix is a hero and has earned an honorary lifetime membership to The AssPenny Foundation for the work he did on this. After weeks of effort using various walkthroughs and forum threads, EasyWinBuilder got AssPennies up and running on Windows in a single day.
+Phelix is a hero and has earned an honorary lifetime membership to 
+The AssPenny Foundation for the work he did on EasyWinBuilder. After weeks of 
+wasted effort using various walkthroughs and forum threads, EasyWinBuilder 
+got AssPennies up and running on Windows in a single day.
 
-The only complication AssPenny developers experienced was needing w32api.h v3.13 for compiling Qt v4.8. Download the correct libaries from SourceForge and copy them into your MinGW installation folder: http://downloads.sourceforge.net/mingw/w32api-3.13-mingw32-dev.tar.gz
+The only complication AssPenny developers experienced with EasyWinbuilder 
+was needing w32api.h v3.13 to compile Qt v4.8. Download the correct libaries from SourceForge and copy them into your MinGW installation folder: 
+http://downloads.sourceforge.net/mingw/w32api-3.13-mingw32-dev.tar.gz
 
 Dependencies
 ------------
