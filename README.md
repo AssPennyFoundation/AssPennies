@@ -26,9 +26,8 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 
 ## Building the AssPennies Qt client
 The Qt client has been successfully compiled on Ubuntu 12.04, and Ubuntu 13.10, and Windows XP.  
-Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest),
-or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download  
-the dependencies, compile the dependencies, and then compile the daemon and Qt client.
+
+Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
 ###Linux/Ubuntu build process:
 
@@ -81,7 +80,8 @@ If you want to contribute to the project:
 ## You think you're better than me?
 You don't pull down eight figures a year without having it _together_.  
 AssPennies is released under the terms of the MIT license. See [COPYING](COPYING)i
-for more information or see http://opensource.org/licenses/MIT.
+for more information or see  
+http://opensource.org/licenses/MIT.
 
 
 [![Ass Pennies on YouTube](http://i.imgur.com/8tIuBCL.jpg)](https://www.youtube.com/watch?v=DO1Q7F23DxM)
