@@ -5,9 +5,7 @@
 ## What are AssPennies?
 Every time a penny passes through your hands, stick it up your ass... and then spend it. You don't just stick 'em up your ass, you spend them. It's a long-term strategy.
 
-Seriously though, AssPennies are a scrypt cryptocurrency built from FooCoin:  
-https://github.com/razorlove-legacy/foocoin
-
+Seriously though, AssPennies are a scrypt cryptocurrency built with love on a foundation of confidence and having the upper hand.
 
 ## How to get AssPennies
 Until an exchange gets its shit together and starts trading AssPennies, there are three ways to get them:
