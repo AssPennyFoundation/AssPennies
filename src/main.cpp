@@ -829,8 +829,12 @@ uint256 static GetOrphanRoot(const CBlock* pblock)
 
 int64 static GetBlockValue(int nHeight, int64 nFees)
 {
-    int64 nSubsidy = 25 * COIN; //25 AssPennies per block
-    return nSubsidy + nFees;
+
+    int64 nSubsidy = 25 * COIN;
+    if (nHeight < 48048)
+	return nSubsidy + nFees;
+    else
+    	return nFees;
 }
 
 static const int64 nTargetTimespan = 1 * 60 * 60 * 4; // Re-target AssPennies difficulty: 4 hours
