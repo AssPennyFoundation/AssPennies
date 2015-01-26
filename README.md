@@ -60,6 +60,7 @@ Ubuntu 13.10:
             libboost-thread1.53-dev
      
 Ubuntu 14.04:
+
         sudo apt-get install
             qt4-dev-tools \
             qt4-qmake \
