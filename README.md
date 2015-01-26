@@ -58,6 +58,22 @@ Ubuntu 13.10:
             libboost-regex1.53-dev \
             libboost-system1.53-dev \
             libboost-thread1.53-dev
+     
+Ubuntu 14.04:
+        sudo apt-get install
+            qt4-dev-tools \
+            qt4-qmake \
+            libdb5.1++-dev \   
+            libminiupnpc-dev \
+            libcurl4-openssl-dev \
+            libboost1.54-dev \
+            libboost-chrono1.54-dev \
+            libboost-date-time1.54-dev \
+            libboost-filesystem1.54-dev \
+            libboost-program-options1.54-dev \
+            libboost-regex1.54-dev \
+            libboost-system1.54-dev \
+            libboost-thread1.54-dev
 
 After installing all dependencies:
 
