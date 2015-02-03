@@ -23,7 +23,7 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 * 3,000 AssPennies are mined every day
 
 ## Building the AssPennies Qt client
-The Qt client has been successfully compiled on Ubuntu 12.04, and Ubuntu 13.10, and Windows XP.  
+The Qt client has been successfully compiled on Ubuntu 14.04, OS X 10.9 Mavericks, and Windows XP.  
 
 Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
@@ -31,53 +31,21 @@ Windows binaries can be downloaded for [each release](https://github.com/AssPenn
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
 	sudo apt-get update
-	sudo apt-get install libdb4.8++-dev
+	sudo apt-get install libdb5.3++-dev
 
-__The required miniupnpc and boost library versions are different between Ubuntu 12.04 and 13.10.__
-
-Ubuntu 12.04:
-
-	sudo apt-get install libminiupnpc8-dev \
-            libboost1.48-dev \
-            libboost-chrono1.48-dev \
-            libboost-date-time1.48-dev \
-            libboost-filesystem1.48-dev \
-            libboost-program-options1.48-dev \
-            libboost-regex1.48-dev \
-            libboost-system1.48-dev \
-            libboost-thread1.48-dev 
-
-Ubuntu 13.10:
-
-	sudo apt-get install libminiupnpc-dev \
-            libboost1.53-dev \
-            libboost-chrono1.53-dev \
-            libboost-date-time1.53-dev \
-            libboost-filesystem1.53-dev \
-            libboost-program-options1.53-dev \
-            libboost-regex1.53-dev \
-            libboost-system1.53-dev \
-            libboost-thread1.53-dev
-     
-Ubuntu 14.04:
-
-        sudo apt-get install
-            qt4-dev-tools \
-            qt4-qmake \
-            libdb5.1++-dev \   
-            libminiupnpc-dev \
-            libcurl4-openssl-dev \
-            libboost1.54-dev \
-            libboost-chrono1.54-dev \
-            libboost-date-time1.54-dev \
-            libboost-filesystem1.54-dev \
-            libboost-program-options1.54-dev \
-            libboost-regex1.54-dev \
-            libboost-system1.54-dev \
-            libboost-thread1.54-dev
+	sudo apt-get install libdb5.3++-dev \
+		libminiupnpc-dev \
+		libboost1.55-dev \
+		libboost-chrono1.55-dev \
+		libboost-date-time1.55-dev \
+		libboost-filesystem1.55-dev \
+		libboost-program-options1.55-dev \
+		libboost-regex1.55-dev \
+		libboost-system1.55-dev \
+		libboost-thread1.55-dev
 
 After installing all dependencies:
-
+	
 	qmake
 	make
 
@@ -94,7 +62,7 @@ If you want to contribute to the project:
 
 ## You think you're better than me?
 You don't pull down eight figures a year without having it _together_.  
-AssPennies is released under the terms of the MIT license. See [COPYING](COPYING)i
+AssPennies is released under the terms of the MIT license. See [COPYING](COPYING)
 for more information or see  
 http://opensource.org/licenses/MIT.
 
