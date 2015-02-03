@@ -7,17 +7,21 @@
 # Originally by Laszlo Hanyecz (solar@heliacal.net)
 
 CXX=llvm-g++
-DEPSDIR=/opt/local
+DEPSDIR=/usr/local
 
 INCLUDEPATHS= \
  -I"$(CURDIR)" \
  -I"$(CURDIR)"/obj \
- -I"$(DEPSDIR)/include" \
- -I"$(DEPSDIR)/include/db48"
+ -I"$(DEPSDIR)/Cellar/boost/1.55.0_2/include" \
+ -I"$(DEPSDIR)/Cellar/berkeley-db/5.3.28/include" \
+ -I"$(DEPSDIR)/Cellar/openssl/1.0.1i/include" \
 
 LIBPATHS= \
- -L"$(DEPSDIR)/lib" \
- -L"$(DEPSDIR)/lib/db48"
+ -L"$(DEPSDIR)/Cellar/berkeley-db/5.3.28/lib" \
+ -L"$(DEPSDIR)/Cellar/boost/1.55.0_2/lib" \
+ -L"$(DEPSDIR)/Cellar/openssl/1.0.1i/lib" \
+ -L"$(DEPSDIR)/Cellar/miniupnpc/1.8.20131007/lib"
+
 
 USE_UPNP:=1
 
@@ -28,21 +32,22 @@ TESTDEFS = -DTEST_DATA_DIR=$(abspath test/data)
 ifdef STATIC
 # Build STATIC if you are redistributing the asspennies binary
 TESTLIBS += \
- $(DEPSDIR)/lib/libboost_unit_test_framework-mt.a
+ $(DEPSDIR)/boost/1.55.0_2/lib/libboost_unit_test_framework-mt.a
 LIBS += \
- $(DEPSDIR)/lib/db48/libdb_cxx-4.8.a \
- $(DEPSDIR)/lib/libboost_system-mt.a \
- $(DEPSDIR)/lib/libboost_filesystem-mt.a \
- $(DEPSDIR)/lib/libboost_program_options-mt.a \
- $(DEPSDIR)/lib/libboost_thread-mt.a \
- $(DEPSDIR)/lib/libssl.a \
- $(DEPSDIR)/lib/libcrypto.a \
+ $(DEPSDIR)/Cellar/berkeley-db/5.3.28/lib/libdb_cxx-5.3.a \
+ $(DEPSDIR)/Cellar/boost/1.55.0_2/lib/libboost_system-mt.a \
+ $(DEPSDIR)/Cellar/boost/1.55.0_2/lib/libboost_system-mt.a \
+ $(DEPSDIR)/Cellar/boost/1.55.0_2/lib/libboost_filesystem-mt.a \
+ $(DEPSDIR)/Cellar/boost/1.55.0_2/lib/libboost_program_options-mt.a \
+ $(DEPSDIR)/Cellar/boost/1.55.0_2/lib/libboost_thread-mt.a \
+ $(DEPSDIR)/Cellar/openssl/1.0.1i/lib/libssl.a \
+ $(DEPSDIR)/Cellar/openssl/1.0.1i/lib/libcrypto.a \
  -lz
 else
 TESTLIBS += \
  -lboost_unit_test_framework-mt
 LIBS += \
- -ldb_cxx-4.8 \
+ -ldb_cxx-5.3 \
  -lboost_system-mt \
  -lboost_filesystem-mt \
  -lboost_program_options-mt \
@@ -59,13 +64,14 @@ ifdef RELEASE
 # Compile for maximum compatibility and smallest size.
 # This requires that dependencies are compiled
 # the same way.
-CFLAGS = -mmacosx-version-min=10.5 -arch i386 -O3
+CFLAGS = -mmacosx-version-min=10.5 -arch x86_64 -O3
 else
 CFLAGS = -g
 endif
 
 # ppc doesn't work because we don't support big-endian
 CFLAGS += -Wall -Wextra -Wformat -Wformat-security -Wno-unused-parameter \
+	-stdlib=libstdc++ \
     $(DEBUGFLAGS) $(DEFS) $(INCLUDEPATHS)
 
 OBJS= \
@@ -97,7 +103,7 @@ OBJS= \
 ifdef USE_UPNP
 	DEFS += -DUSE_UPNP=$(USE_UPNP)
 ifdef STATIC
-	LIBS += $(DEPSDIR)/lib/libminiupnpc.a
+	LIBS += $(DEPSDIR)/miniupnpc/1.8.20131007/lib/libminiupnpc.a
 else
 	LIBS += -lminiupnpc
 endif
