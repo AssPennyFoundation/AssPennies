@@ -318,23 +318,23 @@ isEmpty(BOOST_THREAD_LIB_SUFFIX) {
 }
 
 isEmpty(BDB_LIB_PATH) {
-    macx:BDB_LIB_PATH = /opt/local/lib/db48
+    macx:BDB_LIB_PATH = /usr/local/Cellar/berkeley-db/5.3.28/lib
 }
 
 isEmpty(BDB_LIB_SUFFIX) {
-    macx:BDB_LIB_SUFFIX = -4.8
+    macx:BDB_LIB_SUFFIX = -5.3
 }
 
 isEmpty(BDB_INCLUDE_PATH) {
-    macx:BDB_INCLUDE_PATH = /opt/local/include/db48
+    macx:BDB_INCLUDE_PATH = /usr/local/Cellar/berkeley-db/5.3.28/include
 }
 
 isEmpty(BOOST_LIB_PATH) {
-    macx:BOOST_LIB_PATH = /opt/local/lib
+    macx:BOOST_LIB_PATH = /usr/local/Cellar/boost/1.55.0_2/lib
 }
 
 isEmpty(BOOST_INCLUDE_PATH) {
-    macx:BOOST_INCLUDE_PATH = /opt/local/include
+    macx:BOOST_INCLUDE_PATH = /usr/local/Cellar/boost/1.55.0_2/include
 }
 
 win32:DEFINES += WIN32 WIN32_LEAN_AND_MEAN
