@@ -23,7 +23,7 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 * 3,000 AssPennies are mined every day
 
 ## Building the AssPennies Qt client
-The Qt client has been successfully compiled on Ubuntu 14.04, OS X 10.9 Mavericks, and Windows XP.  
+The Qt client has been successfully compiled on Ubuntu 14.04 and Windows XP.  
 
 Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
@@ -31,7 +31,6 @@ Windows binaries can be downloaded for [each release](https://github.com/AssPenn
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
 	sudo apt-get update
-	sudo apt-get install libdb5.3++-dev
 
 	sudo apt-get install libdb5.3++-dev \
 		libminiupnpc-dev \
