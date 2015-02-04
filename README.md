@@ -10,9 +10,9 @@ Seriously though, AssPennies are a scrypt cryptocurrency built with love on a fo
 ## How to get AssPennies
 Until an exchange gets its shit together and starts trading AssPennies, there are three ways to get them:
 
-* CPU mine with the Qt client or asspenniesd
-* ATI/AMD mine with cgminer 3.7.2: http://ck.kolivas.org/apps/cgminer/3.7
-* Nvidia mine with cudaminer: https://github.com/cbuchner1/CudaMiner
+* CPU mine with ``asspenniesd``
+* ATI/AMD mine with ``cgminer`` 3.7.2: http://ck.kolivas.org/apps/cgminer/3.7
+* Nvidia mine with ``cudaminer``: https://github.com/cbuchner1/CudaMiner
 
 
 ### Let's talk numbers
@@ -22,8 +22,8 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 * Difficulty is readjusted every 4 hours
 * 3,000 AssPennies are mined every day
 
-## Building the AssPennies Qt client
-The Qt client has been successfully compiled on Ubuntu 14.04 and Windows XP.  
+## Building the AssPennies wallet
+The AssPennies wallet has been successfully compiled on Ubuntu 14.04, OS X 10.9 (Mavericks), and Windows XP.  
 
 Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
@@ -61,9 +61,7 @@ If you want to contribute to the project:
 
 ## You think you're better than me?
 You don't pull down eight figures a year without having it _together_.  
-AssPennies is released under the terms of the MIT license. See [COPYING](COPYING)
-for more information or see  
-http://opensource.org/licenses/MIT.
+AssPennies is released under the terms of the MIT license. See [COPYING](COPYING) for more information or see http://opensource.org/licenses/MIT.
 
 
 [![Ass Pennies on YouTube](http://i.imgur.com/8tIuBCL.jpg)](https://www.youtube.com/watch?v=DO1Q7F23DxM)
