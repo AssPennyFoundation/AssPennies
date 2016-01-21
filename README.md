@@ -27,6 +27,20 @@ The AssPennies wallet has been successfully compiled on Ubuntu 14.04, OS X 10.9 
 
 Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
+###OS X 10.11 El Capitan build process:
+	brew install boost
+	brew install berkeley-db
+	brew install openssl
+	brew link openssl --force
+	brew install miniupnpc
+	
+	cd ~/AssPennies/src
+	make -f makefile.osx
+
+	cd ~/AssPennies
+	qmake -spec macx-g++ asspennies-qt.pro
+	make
+	
 ###Linux/Ubuntu build process:
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
