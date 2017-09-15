@@ -23,42 +23,46 @@ Until an exchange gets its shit together and starts trading AssPennies, there ar
 * 3,000 AssPennies are mined every day
 
 ## Building the AssPennies wallet
-The AssPennies wallet has been successfully compiled on Ubuntu 14.04, OS X 10.9 (Mavericks), and Windows XP.  
+The AssPennies wallet has been successfully compiled on Ubuntu 16.04, OS X 10.11 (El Cap), and Windows XP.
 
 Windows binaries can be downloaded for [each release](https://github.com/AssPennyFoundation/AssPennies/releases/latest), or you can use the [EasyWinBuilder](contrib/easywinbuilder) .bat files to download the dependencies, compile the dependencies, and then compile the daemon and Qt client.
 
-###OS X 10.11 El Capitan build process:
+### OS X 10.11 El Capitan build process:
+
 	brew install boost
 	brew install berkeley-db
 	brew install openssl
 	brew link openssl --force
 	brew install miniupnpc
-	
+
 	cd ~/AssPennies/src
 	make -f makefile.osx
 
 	cd ~/AssPennies
 	qmake -spec macx-g++ asspennies-qt.pro
 	make
-	
-###Linux/Ubuntu build process:
+
+### Linux/Ubuntu build process:
 
 	sudo add-apt-repository ppa:bitcoin/bitcoin
 	sudo apt-get update
 
-	sudo apt-get install libdb5.3++-dev \
+	sudo apt-get install
+		build-essential \
+		libdb5.3++-dev \
+		libssl-dev \
 		libminiupnpc-dev \
-		libboost1.55-dev \
-		libboost-chrono1.55-dev \
-		libboost-date-time1.55-dev \
-		libboost-filesystem1.55-dev \
-		libboost-program-options1.55-dev \
-		libboost-regex1.55-dev \
-		libboost-system1.55-dev \
-		libboost-thread1.55-dev
+		libboost1.58-dev \
+		libboost-chrono1.58-dev \
+		libboost-date-time1.58-dev \
+		libboost-filesystem1.58-dev \
+		libboost-program-options1.58-dev \
+		libboost-regex1.58-dev \
+		libboost-system1.58-dev \
+		libboost-thread1.58-dev
 
 After installing all dependencies:
-	
+
 	qmake
 	make
 
@@ -67,15 +71,16 @@ RPC: 21000
 P2P: 21007
 
 ## Contributing to this project
-If you want to contribute to the project: 
+If you want to contribute to the project:
 
 * Fork this repo
 * Commit changes to your forked repo
 * Submit a pull request when your feature or bug fix is ready
 
 ## You think you're better than me?
-You don't pull down eight figures a year without having it _together_.  
-AssPennies is released under the terms of the MIT license. See [COPYING](COPYING) for more information or see http://opensource.org/licenses/MIT.
-
+You don't pull down eight figures a year without having it _together_.
 
 [![Ass Pennies on YouTube](http://i.imgur.com/8tIuBCL.jpg)](https://www.youtube.com/watch?v=DO1Q7F23DxM)
+
+AssPennies is released under the terms of the MIT license.
+See [COPYING](COPYING) for more information or see http://opensource.org/licenses/MIT.
