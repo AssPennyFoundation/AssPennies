@@ -5,6 +5,8 @@
 ## What are AssPennies?
 Every time a penny passes through your hands, stick it up your ass... and then spend it. You don't just stick 'em up your ass, you spend them. It's a long-term strategy.
 
+Check [this](https://www.youtube.com/watch?v=f9aM_dT5VMI) out if you don't get the joke.
+
 Seriously though, AssPennies are a scrypt cryptocurrency built with love on a foundation of confidence and having the upper hand.
 
 ## How to get AssPennies
